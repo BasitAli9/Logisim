@@ -73,31 +73,29 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(320,260)" to="(420,260)"/>
     <wire from="(310,340)" to="(440,340)"/>
     <wire from="(370,370)" to="(440,370)"/>
-    <comp lib="6" loc="(268,266)" name="Text">
-      <a name="text" val="sum"/>
+    <comp lib="5" loc="(630,290)" name="LED"/>
+    <comp lib="0" loc="(310,260)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="SUM"/>
+      <a name="labelfont" val="SansSerif bold 12"/>
     </comp>
+    <comp lib="1" loc="(370,370)" name="NOT Gate"/>
     <comp lib="6" loc="(432,170)" name="Text">
       <a name="text" val="Multiplexer"/>
-    </comp>
-    <comp lib="6" loc="(295,211)" name="Text">
-      <a name="text" val="Input 1"/>
+      <a name="font" val="SansSerif bold 16"/>
     </comp>
     <comp lib="0" loc="(310,230)" name="Pin">
       <a name="tristate" val="false"/>
+      <a name="label" val="A"/>
+      <a name="labelfont" val="SansSerif bold 12"/>
     </comp>
+    <comp lib="1" loc="(470,240)" name="AND Gate"/>
     <comp lib="1" loc="(590,290)" name="OR Gate"/>
+    <comp lib="1" loc="(490,350)" name="AND Gate"/>
     <comp lib="0" loc="(310,340)" name="Pin">
       <a name="tristate" val="false"/>
+      <a name="label" val="B"/>
+      <a name="labelfont" val="SansSerif bold 12"/>
     </comp>
-    <comp lib="1" loc="(490,350)" name="AND Gate"/>
-    <comp lib="1" loc="(370,370)" name="NOT Gate"/>
-    <comp lib="0" loc="(310,260)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="6" loc="(267,346)" name="Text">
-      <a name="text" val="Input 2"/>
-    </comp>
-    <comp lib="5" loc="(630,290)" name="LED"/>
-    <comp lib="1" loc="(470,240)" name="AND Gate"/>
   </circuit>
 </project>

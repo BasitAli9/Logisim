@@ -10,7 +10,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
   <lib desc="#Base" name="6">
     <tool name="Text Tool">
       <a name="text" val=""/>
-      <a name="font" val="SansSerif plain 12"/>
+      <a name="font" val="SansSerif bold 12"/>
       <a name="halign" val="center"/>
       <a name="valign" val="base"/>
     </tool>
@@ -31,7 +31,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <tool lib="6" name="Edit Tool"/>
     <tool lib="6" name="Text Tool">
       <a name="text" val=""/>
-      <a name="font" val="SansSerif plain 12"/>
+      <a name="font" val="SansSerif bold 12"/>
       <a name="halign" val="center"/>
       <a name="valign" val="base"/>
     </tool>
@@ -88,39 +88,34 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(320,390)" to="(590,390)"/>
     <wire from="(320,470)" to="(590,470)"/>
     <wire from="(540,160)" to="(540,210)"/>
-    <comp lib="1" loc="(390,110)" name="NOT Gate"/>
-    <comp lib="1" loc="(640,400)" name="AND Gate"/>
+    <comp lib="5" loc="(690,400)" name="LED"/>
+    <comp lib="1" loc="(640,480)" name="AND Gate"/>
     <comp lib="6" loc="(512,89)" name="Text">
       <a name="text" val="Demultiplexer"/>
+      <a name="font" val="SansSerif bold 12"/>
     </comp>
     <comp lib="5" loc="(690,310)" name="LED"/>
-    <comp lib="6" loc="(255,210)" name="Text">
-      <a name="text" val="D"/>
-    </comp>
-    <comp lib="0" loc="(280,160)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="1" loc="(450,160)" name="NOT Gate"/>
-    <comp lib="5" loc="(690,220)" name="LED"/>
-    <comp lib="5" loc="(690,400)" name="LED"/>
-    <comp lib="1" loc="(640,310)" name="AND Gate"/>
-    <comp lib="0" loc="(280,110)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="6" loc="(252,91)" name="Text">
-      <a name="text" val="Intput1"/>
-    </comp>
     <comp lib="0" loc="(290,200)" name="Pin">
       <a name="tristate" val="false"/>
+      <a name="label" val="Fixed input D"/>
+      <a name="labelfont" val="SansSerif bold 12"/>
     </comp>
-    <comp lib="6" loc="(252,145)" name="Text">
-      <a name="text" val="Input 2"/>
+    <comp lib="1" loc="(450,160)" name="NOT Gate"/>
+    <comp lib="0" loc="(280,160)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="B"/>
+      <a name="labelfont" val="SansSerif bold 12"/>
     </comp>
-    <comp lib="5" loc="(700,480)" name="LED"/>
+    <comp lib="1" loc="(390,110)" name="NOT Gate"/>
     <comp lib="1" loc="(640,220)" name="AND Gate"/>
-    <comp lib="1" loc="(640,480)" name="AND Gate"/>
-    <comp lib="6" loc="(266,228)" name="Text">
-      <a name="text" val="Fixed input"/>
+    <comp lib="1" loc="(640,310)" name="AND Gate"/>
+    <comp lib="1" loc="(640,400)" name="AND Gate"/>
+    <comp lib="5" loc="(690,220)" name="LED"/>
+    <comp lib="5" loc="(700,480)" name="LED"/>
+    <comp lib="0" loc="(280,110)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="A"/>
+      <a name="labelfont" val="SansSerif bold 12"/>
     </comp>
   </circuit>
 </project>
